@@ -31,5 +31,5 @@ def main():
 if __name__ == '__main__':
 	if '--modname' in sys.argv:
 		sys.stdout.write('WoTPresence\n')
-	
-	main()
+	else:
+		main()
