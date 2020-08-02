@@ -25,11 +25,12 @@ def main():
 		RPC.update(**data)
 
 	RPC.close()
-	sys.exit()
 
 
 if __name__ == '__main__':
 	if '--modname' in sys.argv:
-		sys.stdout.write('WoTPresence\n')
+		sys.exit(200)
 	else:
 		main()
+
+	sys.exit()
